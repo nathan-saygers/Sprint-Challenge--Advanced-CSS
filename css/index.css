@@ -180,13 +180,19 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
-    width: 100%;
+    width: 90%;
+    margin: 3% 0;
   }
 }
 a {
   text-decoration: none;
   color: #454A59;
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.6rem;
+  }
 }
 footer {
   color: #22283B;
@@ -279,6 +285,10 @@ footer {
   font-size: 2rem;
   padding: 15px;
   border-radius: 10px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #FFFFFF;
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
