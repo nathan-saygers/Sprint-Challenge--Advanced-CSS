@@ -1,4 +1,5 @@
 // Mixins Here
+@mobile: ~"(max-width: 500px)";
 
 .display-flex(@justify, @align){
   display: flex;
@@ -14,6 +15,9 @@
   font-size: 2rem;
   padding: 15px;
   border-radius: 10px;
+  @media @mobile {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
-@mobile: ~"(max-width: 500px)";
