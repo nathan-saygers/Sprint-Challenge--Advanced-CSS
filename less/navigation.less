@@ -12,8 +12,11 @@
 
   nav{
       .display-flex(space-evenly, center);
-      width: 55%;
+      width: 65%;
       margin: 2% 0;
+      @media @mobile {
+        width: 100%;
+      }
     }
     a {
       text-decoration: none;
