@@ -1,1 +1,35 @@
 // Mixins Here
+@mobile: ~"(max-width: 500px)";
+
+.mobile-reset(){
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.display-flex(@justify, @align){
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.custom-button(@width, @bg-color, @text-color){
+  width: @width;
+  background-color: @bg-color;
+  color: @text-color;
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 10px;
+  &:hover {
+    background-color: @text-color;
+    color: @bg-color;
+  } 
+  @media @mobile {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+
